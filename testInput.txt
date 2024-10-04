@@ -1,0 +1,31 @@
+// This is a comment at the beginning of the file
+// Double // Comment with multiple // slashes
+/*
+ * This is a Javadoc comment
+ * that spans multiple lines.
+ */
+public class Example {
+    public static void main(String[] args) {
+        int a = 5; // Declare variable a
+        /* This is a block comment with a placeholder */
+        int b = 10; // Declare variable b
+        /* Empty block comment */
+
+
+        
+        /* ??? */
+        // The following line performs addition
+        int sum = a + b; // Summing // a // and // b
+        System.out.println("Sum: " + sum); // Print the result
+
+        // Single-line comment at the end of a line
+        // Another single-line comment
+        /*
+         * Multi-line comment
+         * with several lines.
+         */
+        /* Comment with special characters: @ # $ % ^ & * */
+        // Final comment indicating the end of main method
+    }
+    // End of class Example
+}
