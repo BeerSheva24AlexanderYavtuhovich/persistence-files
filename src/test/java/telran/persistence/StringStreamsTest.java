@@ -91,6 +91,12 @@ public class StringStreamsTest {
                     return FileVisitResult.CONTINUE;
                 }
 
+                @Override
+                public FileVisitResult visitFileFailed(Path file, IOException exc) {
+                    writer.println(TAB_SYMBOL.repeat(currentDepth * NUMBER_OF_SPACES) + exc);
+                    return FileVisitResult.CONTINUE;
+                }
+
                 private void printLineWithPrintWriter(PrintWriter writer, Path path) {
                     writer.println(TAB_SYMBOL.repeat(currentDepth * NUMBER_OF_SPACES) + path.getFileName());
                 }
